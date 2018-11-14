@@ -53,7 +53,16 @@ use Session;
 
 3. toastr이 이 방법으로 안됨... 전부 원래대로 되돌림 
 
-에효... 
+!! 추가 !!
+이 방법 안되는거 아님.. defer 키워드가 들어있어서 안되는 것.  
+```php
+    <script src="{{ asset('js/app.js') }}" defer></script>
+```
+여기에서 defer 빼면 됨. 
+defer는 내가 집어넣은게 아니라 원래부터 있었음. 
+
+참고로 toastr에도 defer를 넣어봤는데 안됨. 그냥 빼야 됨..
+
 
 ## toastr 적용해서 성공한 방법!!
 
