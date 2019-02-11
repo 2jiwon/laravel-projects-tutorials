@@ -42,7 +42,7 @@ Homestead $ vagrant reload --provision
 ``todos.test``접속해보면 새로운 Laravel 프로젝트가 생성된 것을 확인할 수 있다.  
 
 
-### Todos 앱의 database는 sqlite로  
+### 만약 database를 변경한다면 이렇게  
 
 1. vagrant의 Todos 디렉토리에서 .env 파일 수정  
 ```bash
