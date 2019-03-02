@@ -29,6 +29,8 @@ class Setting extends Model
 }
 ```
 
+**추가** 4. php artisan migrate 해야함.
+
 ### blog setting seed 만들기 
 
 1. seeder 생성  
