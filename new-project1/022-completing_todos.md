@@ -51,3 +51,24 @@ Route::get('todos/{todo}/complete', 'TodosController@complete');
 ```
 ![screen](./Todos_app23.png)  
 
+### incomplete 추가 
+
+똑같은 방식으로 해서 incomplete 버튼을 추가함
+
+```php
+// resources/views/todos/index.blade.php
+
+		            @if($todo->completed == false)
+
+		              <a class="btn btn-warning btn-sm mx-2 float-right" href="/todos/{{ $todo->id }}/complete">Complete</a>
+
+                    @else
+                      
+		              <a class="btn btn-light btn-sm mx-2 float-right" href="/todos/{{ $todo->id }}/incomplete">Incomplete</a>
+
+		            @endif		
+```
+controller, route 부분은 똑같으므로  생략.
+
+![screen](./Todos_app24.png)  
+
